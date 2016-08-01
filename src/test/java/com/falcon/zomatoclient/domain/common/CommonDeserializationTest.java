@@ -66,41 +66,11 @@ public class CommonDeserializationTest {
 
     @Test
     public void testCreateGeoCodeFromString() throws IOException {
-        String geoCodeString = "{\"location\":{\"entity_type\":\"group\",\"entity_id\":\"36932\",\"title\":\"Chelsea " +
-                "Market, Chelsea, New York City\",\"latitude\":\"40.742051\",\"longitude\":\"-74.004821\",\"city_id\":\"280\"," +
-                "\"city_name\":\"New York City\",\"country_id\":\"216\",\"country_name\":\"United States\"},\"popularity\":" +
-                "{\"popularity\":\"4.92\",\"nightlife_index\":\"4.95\",\"top_cuisines\":[\"cafe\"]}," +
-                "\"link\":\"https://www.zomato.com/new-york-city/chelsea-restaurants\",\"nearby_restaurants\":" +
-                "[{\"id\":\"16774318\",\"name\":\"Otto Enoteca & Pizzeria\"," +
-                "\"url\":\"https://www.zomato.com/new-york-city/otto-enoteca-pizzeria-greenwich-village\"," +
-                "\"location\":{\"address\":\"1 5th Avenue, New York, NY 10003\",\"locality\":\"Greenwich Village\"," +
-                "\"city\":\"New York City\",\"latitude\":\"40.732013\",\"longitude\":\"-73.996155\",\"zipcode\":\"10003\"," +
-                "\"country_id\":\"216\"},\"average_cost_for_two\":\"60\",\"price_range\":\"2\",\"currency\":\"$\"," +
-                "\"thumb\":\"https://b.zmtcdn.com/data/pictures/chains/8/16774318/a54deb9e4dbb79dd7c8091b30c642077" +
-                "_featured_thumb.png\",\"featured_image\":\"https://d.zmtcdn.com/data/pictures/chains/8/16774318/a54deb9e4d" +
-                "bb79dd7c8091b30c642077_featured_v2.png\",\"photos_url\":\"https://www.zomato.com/new-york-city/" +
-                "otto-enoteca-pizzeria-greenwich-village/photos#tabtop\",\"menu_url\":\"https://www.zomato.com/new-york-city/" +
-                "otto-enoteca-pizzeria-greenwich-village/menu#tabtop\",\"events_url\":\"https://www.zomato.com/" +
-                "new-york-city/otto-enoteca-pizzeria-greenwich-village/events#tabtop\",\"user_rating\":{\"aggregate_rating\":" +
-                "\"3.7\",\"rating_text\":\"Very Good\",\"rating_color\":\"5BA829\",\"votes\":\"1046\"},\"has_online_delivery" +
-                "\":\"0\",\"is_delivering_now\":\"0\",\"deeplink\":\"zomato://r/16774318\",\"cuisines\":\"Cafe\"," +
-                "\"all_reviews_count\":\"15\",\"photo_count\":\"18\",\"phone_numbers\":\"(212) 228-2930\",\"photos\":" +
-                "[{\"id\":\"u_MjA5MjY1OTk5OT\",\"url\":\"https://b.zmtcdn.com/data/reviews_photos/c15/9eb13ceaf6e90129c27" +
-                "6ce6ff980bc15_1435111695_640_640_thumb.JPG\",\"thumb_url\":\"https://b.zmtcdn.com/data/reviews_photos/c15/" +
-                "9eb13ceaf6e90129c276ce6ff980bc15_1435111695_200_thumb.JPG\",\"user\":{\"name\":\"John Doe\",\"zomato_handle" +
-                "\":\"John\",\"foodie_level\":\"Super Foodie\",\"foodie_level_num\":\"9\",\"foodie_color\":\"f58552\"," +
-                "\"profile_url\":\"https://www.zomato.com/john\",\"profile_deeplink\":\"zoma.to/u/1170245\",\"profile_image\"" +
-                ":\"string\"},\"res_id\":\"16782899\",\"caption\":\"#awesome\",\"timestamp\":\"1435111770\",\"friendly_time\"" +
-                ":\"3 months ago\",\"width\":\"640\",\"height\":\"640\",\"comments_count\":\"0\",\"likes_count\":\"0\"}]," +
-                "\"all_reviews\":[{\"rating\":\"5\",\"review_text\":\"The best latte I've ever had. It tasted a little " +
-                "sweet\",\"id\":\"24127336\",\"rating_color\":\"305D02\",\"review_time_friendly\":\"2 months ago\"" +
-                ",\"rating_text\":\"Insane!\",\"timestamp\":\"1435507367\",\"likes\":\"0\",\"user\":{\"name\":\"John Doe\"," +
-                "\"zomato_handle\":\"John\",\"foodie_level\":\"Super Foodie\",\"foodie_level_num\":\"9\",\"foodie_color\":" +
-                "\"f58552\",\"profile_url\":\"https://www.zomato.com/john\",\"profile_deeplink\":\"zoma.to/u/1170245\"," +
-                "\"profile_image\":\"string\"},\"comments_count\":\"0\"}]}]}";
+        String geoCodeString = "{\"location\":{\"entity_type\":\"\",\"entity_id\":0,\"title\":\"Richmond Road\"," +
+                "\"latitude\":\"12.9664300000\",\"longitude\":\"77.6072820000\",\"city_id\":4,\"city_name\":\"Bangalore\",\"country_id\":1,\"country_name\":\"India\"},\"popularity\":{\"popularity\":\"4.84\",\"nightlife_index\":\"5.00\",\"nearby_res\":[\"60587\",\"54097\",\"50890\",\"57750\",\"57438\",\"50407\",\"51038\",\"18022249\",\"18339874\"],\"top_cuisines\":[\"North Indian\",\"Chinese\",\"Fast Food\",\"Continental\",\"South Indian\"],\"popularity_res\":\"100\",\"nightlife_res\":\"10\",\"subzone\":\"Richmond Road\",\"subzone_id\":5101,\"city\":\"Bangalore\"},\"link\":\"https://www.zomato.com/bangalore/richmond-road-restaurants?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1\",\"nearby_restaurants\":{\"1\":{\"restaurant\":{\"R\":{\"res_id\":60587},\"apikey\":\"f8127748b93648c2b92d64c70be35d0c\",\"id\":\"60587\",\"name\":\"Smally's Resto Cafe\",\"url\":\"https://www.zomato.com/bangalore/smallys-resto-cafe-church-street?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1\",\"location\":{\"address\":\"1 A, Church street, Opposite Starbucks Coffee, Church Street, Bangalore\",\"locality\":\"Church Street\",\"city\":\"Bangalore\",\"city_id\":4,\"latitude\":\"12.9743836956\",\"longitude\":\"77.6073561609\",\"zipcode\":\"560001\",\"country_id\":1},\"cuisines\":\"American, Italian, Burger\",\"average_cost_for_two\":850,\"price_range\":2,\"currency\":\"Rs.\",\"offers\":[],\"thumb\":\"https://b.zmtcdn.com/data/pictures/chains/9/57329/edfe26cdf889362bf360ea776982f68c_featured_v2.jpg\",\"user_rating\":{\"aggregate_rating\":\"3.9\",\"rating_text\":\"Very Good\",\"rating_color\":\"5BA829\",\"votes\":\"1710\"},\"photos_url\":\"https://www.zomato.com/bangalore/smallys-resto-cafe-church-street/photos#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1\",\"menu_url\":\"https://www.zomato.com/bangalore/smallys-resto-cafe-church-street/menu#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1\",\"featured_image\":\"https://b.zmtcdn.com/data/pictures/chains/9/57329/edfe26cdf889362bf360ea776982f68c_featured_v2.jpg\",\"has_online_delivery\":1,\"is_delivering_now\":1,\"deeplink\":\"zomato://r/60587\",\"order_url\":\"https://www.zomato.com/bangalore/smallys-resto-cafe-church-street/order?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1\",\"order_deeplink\":\"\",\"events_url\":\"https://www.zomato.com/bangalore/smallys-resto-cafe-church-street/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1\"}}}}";
         GeoCode geoCode = objectMapper.readValue(geoCodeString, GeoCode.class);
-        assertEquals(geoCode.getLocation().getCityId(), 280);
-        assertEquals(geoCode.getPopularity().getNightlifeIndex(), 4.95);
+        assertEquals(geoCode.getLocation().getCityId(), 4);
+        assertEquals(geoCode.getPopularity().getNightlifeIndex(), 5.00);
     }
 
     @Test
